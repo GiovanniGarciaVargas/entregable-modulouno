@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Módulo Uno</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        #navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: linear-gradient(90deg, black, purple, #001f54, #87CEEB); /* Colores degradados */
+            display: flex;
+            justify-content: center; /* Centrar el contenido */
+            align-items: center; 
+            padding: 20px 40px;
+            z-index: 1000;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        #navbar img {
+            height: 40px; 
+            margin-right: 20px;
+            border-radius: 50%; /* Borde circular */
+            border: 2px solid white; /* Borde blanco para destacar */
+        }
+
+        #navbar .menu {
+            display: flex;
+            gap: 20px; /* Espacio entre las opciones del menú */
+        }
+
+        #navbar a {
+            color: #f5f5f5; /* Color más claro para mejor contraste */
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            font-family: Arial, sans-serif;
+            transition: background 0.3s ease, color 0.3s ease; /* Añadido cambio suave de color */
+            display: flex;
+            align-items: center; 
+            text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.6); /* Sombra para mayor legibilidad */
+        }
+
+        #navbar a:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+            color: #ffffff; /* Mantiene el color blanco brillante al pasar el mouse */
+        }
+
+        #navbar i {
+            margin-right: 8px;
+        }
+
+        #navbar .logo-container {
+            position: absolute;
+            left: 20px; /* Fija el logo a la izquierda */
+        }
+
+        body {
+            padding-top: 80px;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000; 
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <nav id="navbar">
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo"> 
+        </div>
+        <div class="menu">
+            <a href="#home"><i class="fas fa-home"></i>Inicio</a>
+            <a href="#about"><i class="fas fa-user"></i>Sobre mí</a>
+            <a href="#portfolio"><i class="fas fa-briefcase"></i>Portafolio</a>
+            <a href="#contact"><i class="fas fa-envelope"></i>Contacto</a>
+        </div>
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo"> 
+        </div>
+    </nav>
+
+    <section id="home" style="text-align: center; padding: 100px; background: linear-gradient(95deg, #0f0021, #d87ae7);">
+        <h1 style="font-size: 4rem; color: #fff; text-shadow: 0px 4px 10px rgba(0,0,0,0.8);">Bienvenido a mi Portafolio</h1>
+        <p style="font-size: 1.5rem; color: #c1c1c1;">Giovanni García Vargas.</p>
+    </section>
+
+    <section id="about" style="padding: 60px; background: linear-gradient(135deg, #2c3e50, #8e44ad);">
+        <h2 style="font-size: 2.5rem; color: #fff; text-shadow: 0px 4px 10px rgba(0,0,0,0.5);">Sobre mí</h2>
+        <p style="font-size: 1.2rem; color: #f1f1f1; line-height: 1.6;">
+            Soy un entusiasta de la tecnología, apasionado por el desarrollo y el diseño de interfaces. Disfruto trabajar en equipo y aprender de los demás. Me encanta crear y experimentar con nuevas tecnologías para resolver problemas de forma innovadora.
+        </p>
+    
+        <h2 style="font-size: 2.5rem; color: #fff; margin-top: 40px; text-shadow: 0px 4px 10px rgba(0,0,0,0.5);">Lenguajes y herramientas</h2>
+        
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-between; margin-top: 20px;">
+    
+            <div style="width: 45%; margin-bottom: 20px;">
+                <h3 style="color: #ffdd99; font-size: 1.5rem;">Lenguajes</h3>
+                <ul style="list-style-type: none; padding: 0; font-size: 1.2rem; color: #f1f1f1; line-height: 1.8;">
+                    <li>HTML5</li>
+                    <li>CSS3 (Sass, Tailwind CSS)</li>
+                    <li>JavaScript (ES6+)</li>
+                    <li>TypeScript</li>
+                    <li>C, C++, C#</li>
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>PHP</li>
+                    <li>Kotlin</li>
+                </ul>
+            </div>
+    
+            <div style="width: 45%; margin-bottom: 20px;">
+                <h3 style="color: #ffdd99; font-size: 1.5rem;">Frameworks/Librerías</h3>
+                <ul style="list-style-type: none; padding: 0; font-size: 1.2rem; color: #f1f1f1; line-height: 1.8;">
+                    <li>React.js</li>
+                    <li>Redux</li>
+                    <li>Vue.js</li>
+                    <li>Angular</li>
+                    <li>Ionic</li>
+                    <li>Apache Cordova</li>
+                    <li>Capacitor</li>
+                    <li>Flutter</li>
+                    <li>Xamarin</li>
+                </ul>
+            </div>
+            
+            <div style="width: 45%; margin-bottom: 20px;">
+                <h3 style="color: #ffdd99; font-size: 1.5rem;">Otras Herramientas</h3>
+                <ul style="list-style-type: none; padding: 0; font-size: 1.2rem; color: #f1f1f1; line-height: 1.8;">
+                    <li>Git & GitHub</li>
+                    <li>NPM/Yarn</li>
+                    <li>Figma</li>
+                    <li>Photoshop</li>
+                    <li>Illustrator</li>
+                    <li>APIs RESTful</li>
+                    <li>Bases de datos: MariaDB, PostgreSQL, Oracle</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="portfolio" style="padding: 60px; background-color: #111;">
+        <h2 style="font-size: 2.5rem; color: #fff; text-shadow: 0px 4px 10px rgba(0,0,0,0.5);">Portafolio</h2>
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-around;">
+            <div style="width: 30%; padding: 10px; box-shadow: 0px 4px 12px rgba(0,0,0,0.5); margin: 20px; background: linear-gradient(135deg, #001f54, #3a007d); border-radius: 10px;">
+                <img src="gabisoft.png" alt="Proyecto 1" style="width: 100%; height: auto; border-radius: 10px;">
+                <h3 style="font-size: 1.8rem; color: #fff; margin-top: 10px; text-align:center;">Proyecto - G.A.B.I.S.O.F.T</h3>
+                <p style="font-size: 1.2rem; color: #c1c1c1; text-align: justify;">Proyecto Integrador de la Carrera de Ing. en Sistemas Computacionales, desarrollado en C++ en entorno C++ Builder, el cual es un software gráfico para capacitación en las materias de dicho nivel académico (1er Semestre / Ing. en Sistemas Computacionales).</p>
+            </div>
+            <div style="width: 30%; padding: 10px; box-shadow: 0px 4px 12px rgba(0,0,0,0.5); margin: 20px; background: linear-gradient(135deg, #001f54, #3a007d); border-radius: 10px;">
+                <img src="diksa.png" alt="Proyecto 2" style="width: 100%; height: auto; border-radius: 10px;">
+                <h3 style="font-size: 1.8rem; color: #fff; margin-top: 10px; text-align:center;">Proyecto - Diksa Logística</h3>
+                <p style="font-size: 1.2rem; color: #c1c1c1; text-align: justify;">Proyecto para la Agencia Diksa Logística, para llevar el seguimiento a servicios de lavado de contenedores, diseñado con entorno web utilizando HTML5, CSS3, PHP.</p>
+            </div>
+            <div style="width: 30%; padding: 10px; box-shadow: 0px 4px 12px rgba(0,0,0,0.5); margin: 20px; background: linear-gradient(135deg, #001f54, #3a007d); border-radius: 10px;">
+                <img src="scimec.png" alt="Proyecto 3" style="width: 100%; height: auto; border-radius: 10px;">
+                <h3 style="font-size: 1.8rem; color: #fff; margin-top: 10px; text-align:center;">Proyecto - S.C.I.M.E.C</h3>
+                <p style="font-size: 1.2rem; color: #c1c1c1; text-align: justify;">Asesor de revisión de proyecto desarrollado en entorno web con PHP y HTML5, para el control de inventario de materiales en equipo de cómputo, así como la programación de mantenimientos a los mismos.</p>
+            </div>
+        </div>
+    
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-around;">
+            <div style="width: 30%; padding: 10px; box-shadow: 0px 4px 12px rgba(0,0,0,0.5); margin: 20px; background: linear-gradient(135deg, #001f54, #3a007d); border-radius: 10px;">
+                <h3 style="font-size: 1.8rem; color: #fff; margin-top: 10px; text-align:center;">ZooAR</h3>
+                <p style="font-size: 1.2rem; color: #c1c1c1; text-align: justify;">Aplicación móvil utilizando realidad aumentada para la promoción del Iguanario Archundia en Manzanillo. (Tesis de Grado)</p>
+            </div>
+            <div style="width: 30%; padding: 10px; box-shadow: 0px 4px 12px rgba(0,0,0,0.5); margin: 20px; background: linear-gradient(135deg, #001f54, #3a007d); border-radius: 10px;">
+                <h3 style="font-size: 1.8rem; color: #fff; margin-top: 10px; text-align:center;">SetumAPP</h3>
+                <p style="font-size: 1.2rem; color: #c1c1c1; text-align: justify;">Aplicación móvil con realidad aumentada para guiar a los usuarios por espacios turísticos en Manzanillo. (Asesor de Proyecto)</p>
+            </div>
+            <div style="width: 30%; padding: 10px; box-shadow: 0px 4px 12px rgba(0,0,0,0.5); margin: 20px; background: linear-gradient(135deg, #001f54, #3a007d); border-radius: 10px;">
+                <h3 style="font-size: 1.8rem; color: #fff; margin-top: 10px; text-align:center;">UTeM Visions</h3>
+                <p style="font-size: 1.2rem; color: #c1c1c1; text-align: justify;">Aplicación móvil utilizando realidad aumentada para la promoción de la oferta académica de la Universidad Tecnológica de Manzanillo. (Asesor de Proyecto)</p>
+            </div>
+        </div>
+    
+        <p style="text-align: center; font-size: 1.2rem; color: #c1c1c1;">
+            Visita mi <a href="https://github.com/GiovanniGarciaVargas" style="color: #8a2be2; text-decoration: none;">GitHub</a> para ver más proyectos.
+        </p>
+    </section>
+    
+
+    <section id="contact" style="padding: 60px; background: linear-gradient(135deg, #3a007d, #001f54);">
+        <h2 style="font-size: 2.5rem; color: #fff; text-shadow: 0px 4px 10px rgba(0,0,0,0.5);">Contacto</h2>
+        <form action="mailto:tuemail@example.com" method="post" enctype="text/plain" style="display: flex; flex-direction: column; max-width: 500px; margin: auto;">
+            <label for="name" style="font-size: 1.2rem; color: #c1c1c1; margin-bottom: 10px;">Nombre:</label>
+            <input type="text" id="name" name="name" style="padding: 15px; margin-bottom: 20px; border: 1px solid #444; border-radius: 5px; background-color: #222; color: #fff;">
+
+            <label for="email" style="font-size: 1.2rem; color: #c1c1c1; margin-bottom: 10px;">Correo electrónico:</label>
+            <input type="email" id="email" name="email" style="padding: 15px; margin-bottom: 20px; border: 1px solid #444; border-radius: 5px; background-color: #222; color: #fff;">
+
+            <label for="message" style="font-size: 1.2rem; color: #c1c1c1; margin-bottom: 10px;">Mensaje:</label>
+            <textarea id="message" name="message" rows="5" style="padding: 15px; margin-bottom: 20px; border: 1px solid #444; border-radius: 5px; background-color: #222; color: #fff;"></textarea>
+
+            <button type="submit" style="padding: 15px; background-color: #8a2be2; border: none; border-radius: 5px; color: #fff; font-size: 1.2rem; cursor: pointer;">Enviar</button>
+        </form>
+    </section>
+
+    <footer style="text-align: center; padding: 20px; background-color: #111; color: #c1c1c1;">
+        <p>&copy; 2024 Giovanni García Vargas. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
